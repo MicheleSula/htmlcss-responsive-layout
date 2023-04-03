@@ -1,0 +1,86 @@
+/* General rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section:nth-of-type(2n+0) {
+    background-color: rgb(209, 143, 209);
+}
+
+
+/* Header */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(29, 105, 247);
+    position: fixed;
+    z-index: 1000;
+}
+
+nav.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-menu li a {
+    padding: 10px 15px;
+    color: white;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+
+/*************************** DEBUGGING RULES ****************************/
+
+#logo {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.desktop-menu {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+}
+
+section {
+    height: 400px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
