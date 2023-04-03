@@ -141,6 +141,25 @@ h2 {
     height: 100%;
 }
 
+/* CTA */
+
+.cta {
+    width: 40%;
+    height: 100%;
+    margin: 0 30%;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(68, 64, 64);
+    height: 150px;
+}
+
+.footer-content {
+    width: 40%;
+    height: 100%;
+    margin: 0 30%;
+}
 /**************************** Responsive rules ****************************/
      
 @media screen and (max-width:768px) {
@@ -231,4 +250,16 @@ section {
 .about-us-right {
     background-color: aliceblue;
     border: 1px solid black;
+}
+
+/* CTA */
+
+.cta {
+    background-color: aliceblue;
+}
+
+/* footer content */
+
+.footer-content {
+    background-color: coral;
 }
