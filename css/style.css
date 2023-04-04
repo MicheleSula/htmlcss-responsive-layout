@@ -260,6 +260,9 @@ nav.container {
     margin: 0 10px;
 }
 /* Testimonials */
+#testimonials {
+    padding-bottom: 100px;
+}
 
 #testimonials .container {
     display: block;
@@ -268,20 +271,75 @@ nav.container {
 .testimonials-text {
     height: 20%;
     margin: 40px 0;
+    text-align: center;
+}
+
+.testimonials-text h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 40px;
+}
+
+.testimonials-text h3 {
+    font-size: 48px;
+    font-weight: bolder;
+    padding-bottom: 40px;
+    color: rgba(151,146,228,255);
+}
+
+.testimonials-text p {
+    font-size: 24px;
 }
 
 #testimonials .col {
     width: 100%;
-    height: 20%;
-    margin-bottom: 15px;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    background-color: rgba(151,146,228,255) ;
 }
 
+ .col.testimonials {
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+ }
+
+ .col.testimonials .left {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .testimonials-img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    width: 250px;
+
+ }
+
+ .col.testimonials .left img {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    max-width: 150%;
+ }
+
+ .col.testimonials .right {
+    width: 70%;
+    color: white;
+    text-align: start;
+ }
+
+ .col.testimonials .right h2 {
+    padding-top: 30px;
+    font-size: 20px;
+ }
 /* Benefits */
 
-h2 {
-    text-align: center;
-    padding: 40px 0;
-}
+
 
 /* About us */
 
