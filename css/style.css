@@ -413,6 +413,25 @@ footer {
         margin: 20px auto 0;
     }
 
+    /* Testimonials section */
+
+    .col.testimonials,
+    .col.testimonials .left {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .testimonials-img-wrapper {
+        margin: auto;
+    }
+
+    .col.testimonials .right {
+        padding: 0 15%;
+        line-height: 30px;
+        text-align: center;
+    }
+    
 }
 
 /* Tablet 768px */
@@ -470,6 +489,21 @@ footer {
     .planning-right-wrapper {
         width: 100%;
         margin-bottom: 3rem;
+    }
+
+    /* Testimonials section */
+    #testimonials .col {
+        padding: 25px 15px;
+    }
+
+    .col.testimonials .left {
+        width: auto;
+    }
+
+    .testimonials-img-wrapper {
+        height: 200px;
+        width: 200px;
+        margin: 0 15px;
     }
 }
 
