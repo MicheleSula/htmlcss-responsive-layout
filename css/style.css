@@ -5,21 +5,51 @@
     box-sizing: content-box;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
     height: 100%;
 }
 
+.blue-subtitle {
+    color: rgba(0,132,253,255);
+    font-size: 22px;
+    font-weight: bold;
+}
+
 section:nth-of-type(2n+0) {
     background-color: rgb(209, 143, 209);
 }
 
+/* Button rules */
+.btn {
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.blue-btn {
+    color: white;
+    background-color: rgba(0,132,253,255);
+}
+
+.white-btn {
+    color: black;
+    background-color: white;
+}
 /* Header */
 header {
     height: 100px;
     width: 100%;
-    background-color: rgb(29, 105, 247);
+    background-color: rgba(0,132,253,255);
     position: fixed;
     z-index: 1000;
 }
@@ -43,9 +73,17 @@ nav.container {
     display: none;
 }
 
+.mobile-menu .white-icon {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
 #nav-menu {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 #nav-menu li a {
@@ -58,7 +96,8 @@ nav.container {
 /* Main */
 
 #developer-section {
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 .row-wrapper {
@@ -73,18 +112,79 @@ nav.container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 3%;
+    gap: 20px;
 }
+
+/* COL CTA */
 
 .col-cta {
     width: 65%;
     border-radius: 15px;
+    display: flex;
+    background-color: rgba(181,221,255,255);
 }
 
+.col-cta-left {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 45%;
+    height: 80%;
+}
+
+.col-cta-left p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.col-cta-right {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.cta-image-wrapper {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+}
+
+.col-cta-right img {
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+/* COL */
 .col {
     width: 30%;
-    height: 47%;
     border-radius: 15px;
+    text-align: center;
+}
+
+#developer-section .col {
+    background-color: rgba(181,221,255,255);
+}
+.col-content-wrapper {
+    height: 90%;
+    width: 90%;
+    margin: 5% 5%;
+}
+
+.col .blue-icon {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgba(0,132,253,255);
+}
+
+.col .blue-subtitle {
+    padding: 0 20px;
+}
+
+.col p {
+    margin-top: 20px;
+    font-size: 18px;
 }
 
 /* Planning section */
@@ -161,9 +261,48 @@ footer {
     margin: 0 30%;
 }
 /**************************** Responsive rules ****************************/
-     
-@media screen and (max-width:768px) {
 
+/* Mobile 480px*/
+@media screen and (max-width:480px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* Developer section */
+    .row {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-cta {
+        width: 90%;
+    }
+
+    .col-cta-left {
+        margin: 0 5%;
+        text-align: center;   
+    }
+
+    .col-cta-right {
+        width: 90%;
+        height: 50%;
+        margin: 0 5%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .col {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+}
+
+/* Tablet 768px */
+@media screen and (max-width:768px) {
+    
+    /* nav-menu */
     .desktop-menu {
         display: none;
     }
@@ -172,65 +311,43 @@ footer {
         display: block;
     }
 
-    .container {
-        width: 100%;
-    }
-
-    .row {
-        display: block;
-        width: 90%;
-        margin: auto;
-    }
-
+    /* Developer section */
     .col-cta {
-        width: 80%;
         margin: auto;
-        height: 400px;
+        display: block;
     }
 
-    .col {
-        width: 80%;
-        margin: 20px auto 0;
-        height: 250px;
+    .col-cta-left {
+        width: 90%;
+        height: 50%;
+        padding-top: 20px; 
     }
+
+    #col-cta-img {
+        max-width: 80%;
+    }
+
+    .col-content-wrapper {
+        width: 90%;
+        margin: 0;
+        padding: 5% 5%;
+     }
+
+    
 }
+
 
 
 /*************************** DEBUGGING RULES ****************************/
 
 /* Header */
-#logo {
-    background-color: white;
-    width: 40px;
-    height: 40px;
-}
 
-.desktop-menu {
-    background-color: rgb(0, 0, 0);
-    height: 40px;
-}
+
+
 
 section {
-    height: 600px;
     width: 100%;
     border-bottom: 2px solid black;
-}
-
-/* Main */
-.row {
-    background-color: chartreuse;
-    border: 1px solid white;
-    height: 300px;
-}
-
-.col-cta {
-    background-color: darkorange;
-    border: 2px solid white;
-}
-
-.col {
-    background-color: brown;
-    border: 2px solid white;
 }
 
 /* Planning section */
