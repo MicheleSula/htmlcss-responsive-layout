@@ -23,7 +23,7 @@ body {
 }
 
 section:nth-of-type(2n+0) {
-    background-color: rgb(209, 143, 209);
+    background-color: rgba(151,146,228,255);
 }
 
 /* Button rules */
@@ -44,6 +44,12 @@ section:nth-of-type(2n+0) {
 .white-btn {
     color: black;
     background-color: white;
+}
+
+.circle-violet-btn {
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: rgba(151,146,228,255);
 }
 /* Header */
 header {
@@ -164,6 +170,7 @@ nav.container {
 #developer-section .col {
     background-color: rgba(181,221,255,255);
 }
+
 .col-content-wrapper {
     height: 90%;
     width: 90%;
@@ -188,7 +195,6 @@ nav.container {
 }
 
 /* Planning section */
-
 .planning {
     height: 100%;
     width: 100%;
@@ -199,9 +205,60 @@ nav.container {
 .planning.right {
     width: 50%;
     height: 80%;
-    margin: auto;
+    margin: 5% 0;
+    display: flex;
 }
 
+.planning-content {
+    width: 70%;
+    padding-left: 30%;
+    padding-right: 10%;
+}
+
+.planning-content img {
+    max-width: 100%;
+}
+
+.planning-title {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.planning-text {
+    color: white;
+}
+
+.planning-right-wrapper {
+    margin-top: 15%;
+    width: 40%;
+    background-color: white;
+    border-radius: 25px;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.planning-right-wrapper img {
+    max-width: 80%;
+    width: 80%;
+    padding: 10%;
+    display: block;
+}
+
+.planning-right-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0;
+    
+}
+
+#planning-right-text {
+    font-style: oblique;
+    margin: 0 10px;
+}
 /* Testimonials */
 
 #testimonials .container {
@@ -297,6 +354,7 @@ footer {
         width: 90%;
         margin: 20px auto 0;
     }
+
 }
 
 /* Tablet 768px */
@@ -333,33 +391,33 @@ footer {
         padding: 5% 5%;
      }
 
-    
+    /* Planning section */
+
+    .planning {
+        display: block;
+    }
+
+
+    .planning.left,
+    .planning.right {
+        width: 100%;
+    }
+
+    .planning-content {
+        width: 90%;
+        margin: 5% 5%;
+        padding: 0;
+    }
+
+    .planning-right-wrapper {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
 
 
 
 /*************************** DEBUGGING RULES ****************************/
-
-/* Header */
-
-
-
-
-section {
-    width: 100%;
-    border-bottom: 2px solid black;
-}
-
-/* Planning section */
-.planning {
-    background-color: bisque;
-}
-
-.planning.left,
-.planning.right {
-    background-color: brown;
-    border: 1px solid black;
-}
 
 /* About us */
 
