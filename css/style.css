@@ -377,7 +377,7 @@ footer {
 }
 /**************************** Responsive rules ****************************/
 
-/* Mobile 480px*/
+/***************************** Mobile 480px *****************************/
 @media screen and (max-width:480px) {
 
     .container {
@@ -434,7 +434,7 @@ footer {
     
 }
 
-/* Tablet 768px */
+/***************************** Tablet 768px and mobile 480px common rules *****************************/
 @media screen and (max-width:768px) {
     
     /* nav-menu */
@@ -491,6 +491,13 @@ footer {
         margin-bottom: 3rem;
     }
 
+    
+}
+
+/***************************** Only tablet 768px rules *****************************/
+
+@media screen and (max-width:768px) and (min-width:481px) {
+    
     /* Testimonials section */
     #testimonials .col {
         padding: 25px 15px;
