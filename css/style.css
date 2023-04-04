@@ -46,6 +46,11 @@ section:nth-of-type(2n+0) {
     background-color: white;
 }
 
+.violet-btn {
+    color: white;
+    background-color: rgba(151,146,228,255);
+}
+
 .circle-violet-btn {
     padding: 10px 15px;
     border-radius: 50%;
@@ -337,8 +342,52 @@ nav.container {
     padding-top: 30px;
     font-size: 20px;
  }
-/* Benefits */
 
+/* Benefits */
+#benefits-section {
+    padding-bottom: 3rem;
+}
+#benefits-title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.row.benefits-row {
+    margin-top: 60px;
+    gap: 50px 0;
+}
+
+.col.benefits-col {
+    background-color: white;
+    text-align: left;
+    padding: 30px 30px;
+    width: 27%;
+}
+
+.col.benefits-col h2,
+.col.benefits-col h3,
+.col.benefits-col p {
+    margin: 20px 0;
+}
+
+.col.benefits-col h2,
+.col.benefits-col h3 {
+    color: rgba(151,146,228,255);
+}
+
+.col.benefits-col h2 {
+    font-size: 50px;
+}
+
+.col.benefits-col h3 {
+    font-size: 30px;
+}
+
+.col.benefits-col p {
+    line-height: 30px;
+}
 
 
 /* About us */
@@ -375,6 +424,8 @@ footer {
     height: 100%;
     margin: 0 30%;
 }
+
+
 /**************************** Responsive rules ****************************/
 
 /***************************** Mobile 480px *****************************/
@@ -432,6 +483,23 @@ footer {
         text-align: center;
     }
     
+    /* Benefits section */
+    .col.benefits-col {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .col.benefits-col h2,
+    .col.benefits-col h3,
+    .col.benefits-col p,
+    .col.benefits-col a {
+        margin: 20px 30px;
+        padding: 0;
+    }
+
+
+
 }
 
 /***************************** Tablet 768px and mobile 480px common rules *****************************/
@@ -511,6 +579,12 @@ footer {
         height: 200px;
         width: 200px;
         margin: 0 15px;
+    }
+
+    /* Benefits section */
+    .col.benefits-col {
+        width: 39%;
+        padding: 10px 30px;
     }
 }
 
